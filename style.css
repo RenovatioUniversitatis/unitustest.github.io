@@ -1,0 +1,192 @@
+.container {
+  padding: 15px 0;
+}
+
+
+.btn .material-icons {
+  font-size: 20px;
+  vertical-align: bottom;
+  display: inline;
+}
+
+#diagrams {
+  margin: auto;
+  width: 727px;
+}
+
+#axes, #scale {
+  position: relative;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  box-sizing: content-box;
+  display: inline-block;
+}
+
+#axes {
+  width: 600px;
+  height: 600px;
+  margin-right: 30px;background-size: 5% 5%;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+
+#axes .auth, #axes .lib {
+  height: 300px;
+}
+
+#axes div div {
+  height: 300px;
+  width: 300px;
+  float: left;
+}
+
+.auth .left {
+  background-color: rgba(173, 235, 144, 0.8);
+}
+.auth .right {
+  background-color: rgba(255, 241, 99, 0.8);
+}
+.lib .left {
+  background-color: rgba(59, 170, 223, 0.45);
+}
+.lib .right {
+  background-color: rgba(163, 6, 226, 0.2);
+}
+
+
+.pin {
+  position: absolute;
+  z-index: 200;
+  margin-left: -15.5px;
+  margin-top: -15px;
+  left: 50%;
+  top: 50%;
+}
+.pin i {
+  font-size: 200%;
+}
+
+.partyPin i {
+  opacity: 0.5;
+}
+
+#scale {
+  background-size: 100% 5%;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+
+#scale, #scale > div {
+  height: 600px;
+  width: 90px;
+}
+
+#scale > div {
+  background: linear-gradient(0deg, rgba(0,0,255,0.5) 0%, rgba(0,255,0,0.5) 100%);
+}
+
+.bar {
+  position: absolute;
+  z-index: 200;
+  height: 4px;
+  width: 90px;
+  background: rgba(255, 116, 0, 1);
+  top: 50%;
+  margin-top: -2px;
+}
+
+.partyBar {
+  opacity: 0.5;
+  background: #000;
+}
+
+.tooltip-inner {
+  max-width: 300px;
+}
+
+.card .list-group {
+	counter-reset: q-counter;
+}
+
+.card .list-group li p:before {
+
+  counter-increment: q-counter;
+  font-weight: bold;
+  color: rgba(0,0,0,0.5);
+  margin-right: 5px;
+}
+
+.rotate_plus {
+
+  transform: rotate(90deg);
+
+
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+
+  /* IE */
+  -ms-transform: rotate(90deg);
+
+  /* Opera */
+  -o-transform: rotate(90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.rotate_minus {
+
+  transform: rotate(-90deg);
+
+
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+
+  /* IE */
+  -ms-transform: rotate(-90deg);
+
+  /* Opera */
+  -o-transform: rotate(-90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+body
+{
+  font-family: "Playfair Display SC";
+  font-weight: 500;
+  background-color: #f2f2f2 !important;
+}
+
+option {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+select {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-size: 120%;
+}
+
+
+.buttons {
+  margin: 10;
+  position: absolute;
+  left: 46%;
+  -ms-transform: translate(-46%, -0%);
+  transform: translate(-46%, 0%);
+}
